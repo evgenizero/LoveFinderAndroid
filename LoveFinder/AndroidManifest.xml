@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.neya.love.finder"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".data.App"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".Main"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Register" >
+        </activity>
+        <activity
+            android:name=".UserInfo"
+            android:label="User Details" >
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:label="Menu" >
+        </activity>
+        <activity
+            android:name=".SearchUserActivity"
+            android:label="Search User" >
+        </activity>
+        <activity
+            android:name=".UsersList"
+            android:label="Users" >
+        </activity>
+        <activity
+            android:name=".Conversations"
+            android:label="Conversations" >
+        </activity>
+        <activity
+            android:name=".MessagesActivity"
+            android:label="Messages" >
+        </activity>
+    </application>
+
+</manifest>

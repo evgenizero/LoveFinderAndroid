@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFCCCCCC"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/messages_list"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0" >
+
+        <EditText
+            android:id="@+id/messages_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/send_comment_button"
+            android:inputType="text" >
+        </EditText>
+
+        <Button
+            android:id="@+id/messages_button"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:layout_alignBottom="@id/messages_text"
+            android:layout_alignParentRight="true"
+            android:text="Send"
+            android:onClick="onSendMessageClick"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>
